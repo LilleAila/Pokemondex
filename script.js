@@ -120,5 +120,7 @@ for (const pokeListItem of pokeListItems) {
 
 
 // initialize App
-fetchPokeList('https://pokeapi.co/api/v2/pokemon?offset=0&limit=10');
-fetchPokeData(25)
+window.onload = function() {
+  fetchPokeList('https://pokeapi.co/api/v2/pokemon?offset=0&limit=10');
+  fetchPokeData(25)
+}
